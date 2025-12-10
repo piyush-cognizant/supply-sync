@@ -20,6 +20,7 @@ npm run dev
 ```
 
 ## Additional Commands for Production
+## Additional Commands for Production
 
 - **Build**: `npm run build`
 - **Preview**: `npm run preview`
@@ -27,6 +28,18 @@ npm run dev
 ---
 
 # Development Workflow Conventions
+
+## Commit Types
+
+- **feat**: A new feature or functionality
+- **fix**: A bug fix or patch
+- **docs**: Documentation changes (README, comments, etc.)
+- **refactor**: Code restructuring without changing functionality
+- **style**: Formatting or style changes (whitespace, semicolons, etc.)
+- **test**: Adding or updating tests
+- **chore**: Build, dependencies, or tooling updates
+- **perf**: Performance improvements
+- **ci**: CI/CD pipeline changes
 
 ## Commit Message Format
 - Format: `<type>: <message>`
@@ -53,7 +66,7 @@ npm run dev
 - Command: `git merge origin/dev`
 
 ### 3. Push and Create PR
-- Push your branch: `git push origin feat/feature-name`
+- Push your branch: `git push -u origin feat/feature-name`
 - Create Pull Request to `dev` branch
 
 ## Pull Request Format
