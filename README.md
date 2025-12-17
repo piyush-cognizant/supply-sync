@@ -3,8 +3,8 @@
 ## Clone the Repository
 
 ```bash
-git clone https://github.com/piyush-cognizant/spinkart.git
-cd spinkart
+git clone https://github.com/piyush-cognizant/supply-sync.git
+cd supply-sync
 ```
 
 ## Install Dependencies
