@@ -20,6 +20,7 @@ npm run dev
 ```
 
 ## Additional Commands for Production
+## Additional Commands for Production
 
 - **Build**: `npm run build`
 - **Preview**: `npm run preview`
@@ -31,7 +32,8 @@ npm run dev
 ## Commit Types
 
 - **feat**: A new feature or functionality
-- **fix**: A bug fix or patch
+- **bugfix**: A bug fix or patch
+- **hotfix**: An urgent fix 
 - **docs**: Documentation changes (README, comments, etc.)
 - **refactor**: Code restructuring without changing functionality
 - **style**: Formatting or style changes (whitespace, semicolons, etc.)
