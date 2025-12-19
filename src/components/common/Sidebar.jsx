@@ -14,26 +14,26 @@ import { useState } from "react";
 import { NavLink } from "react-router";
 import {
   BiMenu,
-  BiSolidDashboard,
-  BiRectangle,
   BiStore,
-  BiSolidGroup,
-  BiSolidTruck,
+  BiGroup,
   BiCart,
   BiBarChartAlt2,
   BiCog,
 } from "react-icons/bi";
+import { LuLayoutDashboard, LuTruck } from "react-icons/lu";
+import { GoPackage } from "react-icons/go";
+
 import ThemeSwitcher from "./ThemeSwitcher";
 
 const DRAWER_WIDTH = 280;
 const DRAWER_WIDTH_COLLAPSED = 80;
 
 const menuItems = [
-  { label: "Dashboard", icon: <BiSolidDashboard />, path: "/" },
-  { label: "Orders", icon: <BiRectangle />, path: "/orders" },
+  { label: "Dashboard", icon: <LuLayoutDashboard />, path: "/" },
+  { label: "Orders", icon: <GoPackage />, path: "/orders" },
   { label: "Inventory", icon: <BiStore />, path: "/inventory" },
-  { label: "Vendors", icon: <BiSolidGroup />, path: "/vendors" },
-  { label: "Shipments", icon: <BiSolidTruck />, path: "/shipments" },
+  { label: "Vendors", icon: <BiGroup />, path: "/vendors" },
+  { label: "Shipments", icon: <LuTruck />, path: "/shipments" },
   { label: "Purchases", icon: <BiCart />, path: "/purchases" },
   { label: "Analytics", icon: <BiBarChartAlt2 />, path: "/analytics" },
   { label: "Settings", icon: <BiCog />, path: "/settings" },
