@@ -1,0 +1,258 @@
+{
+  "vendors": [
+    {
+      "id": 1,
+      "name": "Global Logistics Corp",
+      "email": "contact@globallogistics.com",
+      "phone": "+1-800-555-0123",
+      "address": "123 Supply Ave, New York, NY 10001",
+      "category": "Logistics",
+      "rating": 4.5,
+      "status": "active",
+      "createdAt": "2025-01-15"
+    },
+    {
+      "id": 2,
+      "name": "Premium Parts Ltd",
+      "email": "sales@premiumparts.com",
+      "phone": "+1-800-555-0124",
+      "address": "456 Industrial Blvd, Chicago, IL 60601",
+      "category": "Manufacturing",
+      "rating": 4.8,
+      "status": "active",
+      "createdAt": "2025-02-20"
+    },
+    {
+      "id": 3,
+      "name": "Quick Supplies Inc",
+      "email": "support@quicksupplies.com",
+      "phone": "+1-800-555-0125",
+      "address": "789 Trade Street, Los Angeles, CA 90001",
+      "category": "Distribution",
+      "rating": 4.2,
+      "status": "active",
+      "createdAt": "2025-03-10"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD001",
+      "vendorId": 1,
+      "orderDate": "2025-12-18",
+      "dueDate": "2025-12-28",
+      "items": [
+        {
+          "id": 1,
+          "name": "Steel Brackets",
+          "quantity": 100,
+          "unitPrice": 15.50,
+          "totalPrice": 1550
+        },
+        {
+          "id": 2,
+          "name": "Fasteners Pack",
+          "quantity": 200,
+          "unitPrice": 8.75,
+          "totalPrice": 1750
+        }
+      ],
+      "totalAmount": 3300,
+      "status": "pending",
+      "paymentStatus": "unpaid"
+    },
+    {
+      "id": "ORD002",
+      "vendorId": 2,
+      "orderDate": "2025-12-15",
+      "dueDate": "2025-12-25",
+      "items": [
+        {
+          "id": 1,
+          "name": "Circuit Boards",
+          "quantity": 50,
+          "unitPrice": 45.00,
+          "totalPrice": 2250
+        }
+      ],
+      "totalAmount": 2250,
+      "status": "confirmed",
+      "paymentStatus": "partial"
+    },
+    {
+      "id": "ORD003",
+      "vendorId": 3,
+      "orderDate": "2025-12-10",
+      "dueDate": "2025-12-20",
+      "items": [
+        {
+          "id": 1,
+          "name": "Packaging Materials",
+          "quantity": 500,
+          "unitPrice": 2.50,
+          "totalPrice": 1250
+        }
+      ],
+      "totalAmount": 1250,
+      "status": "delivered",
+      "paymentStatus": "paid"
+    }
+  ],
+  "inventory": [
+    {
+      "id": "INV001",
+      "productName": "Steel Brackets",
+      "sku": "SB-001",
+      "category": "Raw Materials",
+      "quantity": 450,
+      "minStock": 100,
+      "maxStock": 1000,
+      "unitPrice": 15.50,
+      "warehouseLocation": "A-15-3",
+      "lastUpdated": "2025-12-22"
+    },
+    {
+      "id": "INV002",
+      "productName": "Circuit Boards",
+      "sku": "CB-002",
+      "category": "Components",
+      "quantity": 75,
+      "minStock": 50,
+      "maxStock": 500,
+      "unitPrice": 45.00,
+      "warehouseLocation": "B-20-1",
+      "lastUpdated": "2025-12-22"
+    },
+    {
+      "id": "INV003",
+      "productName": "Packaging Materials",
+      "sku": "PM-003",
+      "category": "Packaging",
+      "quantity": 2100,
+      "minStock": 500,
+      "maxStock": 5000,
+      "unitPrice": 2.50,
+      "warehouseLocation": "C-10-5",
+      "lastUpdated": "2025-12-22"
+    },
+    {
+      "id": "INV004",
+      "productName": "Fasteners Pack",
+      "sku": "FP-004",
+      "category": "Hardware",
+      "quantity": 520,
+      "minStock": 200,
+      "maxStock": 1500,
+      "unitPrice": 8.75,
+      "warehouseLocation": "A-12-2",
+      "lastUpdated": "2025-12-22"
+    }
+  ],
+  "shipments": [
+    {
+      "id": "SHIP001",
+      "orderId": "ORD001",
+      "vendorId": 1,
+      "shippingDate": "2025-12-19",
+      "estimatedDelivery": "2025-12-28",
+      "actualDelivery": null,
+      "trackingNumber": "TRACK123456789",
+      "carrier": "FedEx",
+      "status": "in-transit",
+      "items": 300,
+      "origin": "New York, NY",
+      "destination": "warehouse location"
+    },
+    {
+      "id": "SHIP002",
+      "orderId": "ORD002",
+      "vendorId": 2,
+      "shippingDate": "2025-12-16",
+      "estimatedDelivery": "2025-12-25",
+      "actualDelivery": "2025-12-24",
+      "trackingNumber": "TRACK987654321",
+      "carrier": "UPS",
+      "status": "delivered",
+      "items": 50,
+      "origin": "Chicago, IL",
+      "destination": "warehouse location"
+    },
+    {
+      "id": "SHIP003",
+      "orderId": "ORD003",
+      "vendorId": 3,
+      "shippingDate": "2025-12-12",
+      "estimatedDelivery": "2025-12-20",
+      "actualDelivery": "2025-12-19",
+      "trackingNumber": "TRACK555666777",
+      "carrier": "DHL",
+      "status": "delivered",
+      "items": 500,
+      "origin": "Los Angeles, CA",
+      "destination": "warehouse location"
+    }
+  ],
+  "purchases": [
+    {
+      "id": "PUR001",
+      "orderId": "ORD001",
+      "vendorId": 1,
+      "purchaseDate": "2025-12-18",
+      "totalAmount": 3300,
+      "status": "pending",
+      "items": 300,
+      "notes": "Urgent delivery required"
+    },
+    {
+      "id": "PUR002",
+      "orderId": "ORD002",
+      "vendorId": 2,
+      "purchaseDate": "2025-12-15",
+      "totalAmount": 2250,
+      "status": "completed",
+      "items": 50,
+      "notes": "Standard order"
+    },
+    {
+      "id": "PUR003",
+      "orderId": "ORD003",
+      "vendorId": 3,
+      "purchaseDate": "2025-12-10",
+      "totalAmount": 1250,
+      "status": "completed",
+      "items": 500,
+      "notes": "Bulk packaging order"
+    }
+  ],
+  "analytics": {
+    "dashboard": {
+      "totalOrders": 3,
+      "totalOrderValue": 6800,
+      "pendingOrders": 1,
+      "completedOrders": 2,
+      "activeVendors": 3,
+      "inventoryValue": 34755,
+      "lowStockItems": 1,
+      "shipmentsInTransit": 1
+    },
+    "metrics": [
+      {
+        "month": "October",
+        "orders": 12,
+        "revenue": 45000,
+        "vendorPerformance": 4.6
+      },
+      {
+        "month": "November",
+        "orders": 18,
+        "revenue": 62000,
+        "vendorPerformance": 4.4
+      },
+      {
+        "month": "December",
+        "orders": 15,
+        "revenue": 52000,
+        "vendorPerformance": 4.5
+      }
+    ]
+  }
+}
