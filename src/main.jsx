@@ -9,6 +9,8 @@ import { ThemeProvider } from './store/themeStore.jsx'
 import VendorsPage from './pages/VendorsPage.jsx'
 import OrdersPage from './pages/OrdersPage.jsx'
 import ShipmentsPage from './pages/ShipmentsPage.jsx'
+import PurchasesPage from './pages/PurchasesPage.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -20,6 +22,7 @@ createRoot(document.getElementById('root')).render(
             <Route path="vendors" element={<VendorsPage />} />
             <Route path="orders" element={<OrdersPage />} />
             <Route path="shipments" element={<ShipmentsPage />} />
+            <Route path="purchases" element={<PurchasesPage />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
