@@ -52,7 +52,7 @@ const PurchaseTable = ({ purchases, loading, onEdit, onDelete }) => {
           ) : (
             purchases.map((purchase) => (
               <TableRow key={purchase.id} hover>
-                <TableCell sx={{ fontWeight: 500 }}>{purchase.poNumber}</TableCell>
+                <TableCell sx={{ fontWeight: 500 }}>{purchase.id}</TableCell>
                 <TableCell>{purchase.vendorId}</TableCell>
                 <TableCell>
                   {new Date(purchase.orderDate).toLocaleDateString()}
