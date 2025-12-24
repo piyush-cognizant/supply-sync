@@ -6,6 +6,7 @@ import App from './App.jsx'
 import { RootLayout } from './components/layouts'
 import { NotFound } from './pages'
 import { ThemeProvider } from './store/themeStore.jsx'
+import OrdersPage from './pages/OrdersPage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,7 +15,7 @@ createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path="/" element={<RootLayout />}>
             <Route index element={<App />} />
-            {/* Define other routes here as needed */}
+            <Route path="orders" element={<OrdersPage />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
