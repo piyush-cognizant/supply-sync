@@ -22,6 +22,7 @@ import {
 } from "react-icons/bi";
 import { LuLayoutDashboard, LuTruck } from "react-icons/lu";
 import { GoPackage } from "react-icons/go";
+import LogoutButton from "../features/auth/LogoutButton";
 
 import ThemeSwitcher from "./ThemeSwitcher";
 
@@ -66,7 +67,6 @@ const Sidebar = () => {
         <Box sx={{ fontWeight: "bold", fontSize: "1.2rem" }}>
           SupplySync
         </Box>
-        <ThemeSwitcher />
       </Box>
 
       {/* Menu Items */}
@@ -125,7 +125,15 @@ const Sidebar = () => {
 
       {/* Divider */}
       <Divider />
+
+      {/* Logout Button */}
+      <Box sx={{ p: 2, display: "flex", justifyContent: "space-between" }}>
+        <LogoutButton />
+        <ThemeSwitcher />
+      </Box>
+
     </Box>
+
   );
 
   return (
